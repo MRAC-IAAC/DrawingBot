@@ -1,5 +1,8 @@
 # DrawingBot
 
+
+![alt text](Diagrams/2.png)
+
 The Drawing Bot // R.3 Studio  is a project of IAAC, Institute for Advanced Architecture of Catalonia developed at the Master in Robotics and Advanced Construction in 2020/21 by:
 
 Students: Helena Homsi, Juan E. Ojeda, Aslinur Taskin
@@ -10,6 +13,8 @@ Faculty Assistant: Antoine Jaunard, Ashkan Foroughi, Soroush Garivani
 
 ## Getting Started 
 This repository will consist of several files each in their respective folders. The idea is to share all current working files in order to expand on the idea of designing and drawing with robots. We will be using a **Turtlebot 3 with a Raspberry Pi 3** containing **Ros Kinetic** as well as a computer running **Ubuntu 16.04**. All necessary files are located in this github and will be explained in the following steps. For the general set up we followed the following website, but our files that are in this github contain more than what is offered in the setup link: https://emanual.robotis.com/docs/en/platform/turtlebot3/sbc_setup/
+
+![alt text](Diagrams/3.png)
 
 ## Requirements
 ### For the Turtlebot 3: 
@@ -58,10 +63,14 @@ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 roslaunch rosbridge_server rosbridge_websocket.launch
 ```
+
+![alt text](Diagrams/1.png)
 run the grasshopper file titled **_FloorPainting_** and connect to the IP address of Ubuntu by changing the IP address and clicking the button below the IP address. Then run the following on the Ubuntu side:
 
 ```
-grasshopper.py
+rosrun turtlebot3_example grasshopper.py
 ```
 
 In order to make sure the orientation and location of the Turtlebot3 is correct on your Rhino screen, rotate and move the TB3 using teleop, and if adjustments are necessary then the rotation adjustment part of the script is highlighted and tagged. 
+
+![alt text](Diagrams/4.png)
